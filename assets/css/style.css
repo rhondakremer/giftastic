@@ -1,3 +1,9 @@
 body {
     background: lightpink;
 }
+
+.gifs {
+    float: left;
+    padding: 5px;
+}
+
