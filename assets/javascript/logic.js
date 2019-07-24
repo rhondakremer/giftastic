@@ -26,7 +26,6 @@ $("#submit").on("click", function () {
     $("#userInput").val("");
     $("#buttons-go-here").empty();
     renderButtons();
-   // return;
 }
 });
 
@@ -44,7 +43,6 @@ $("#buttons-go-here").on("click", ".animals", function () {
         console.log("this works too");
         console.log(response);
         var results = response.data;
-       //$("#buttons-go-here").empty();
        
         for (var i = 0; i < 10; i++) {
             var animalDiv = $("<div class='gifs'>");
@@ -74,29 +72,26 @@ $("#buttons-go-here").on("click", ".animals", function () {
 function changeState() {
     
     var state = $(this).attr("data-state");
-    console.log(this);
+    //console.log(this);
     var animate = $(this).attr("data-animate");
     var still = $(this).attr("data-still");
 
 
     if (state == "still") {
-        console.log("I am still")
+        //console.log("I am still")
         $(this).attr("src", animate);
         $(this).attr("data-state", "animate");
-        return;
+        
     } else {
-        console.log("I am animated")
+        //console.log("I am animated")
         $(this).attr("src", still);
         $(this).attr("data-state", "still");
-        return;
+        
     }
 
 };
 
-$("#gifs-go-here").on("click", ".gifs", function() {
-    console.log("I'm changing state");
-    changeState();
-});
+$("#gifs-go-here").on("click", ".gifs img",changeState);
 
 
 });
