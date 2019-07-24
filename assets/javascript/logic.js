@@ -91,7 +91,7 @@ function changeState() {
 
 };
 
-$("#gifs-go-here").on("click", ".gifs img",changeState);
+$("#gifs-go-here").on("click", ".gifs img", changeState);
 
 
 });

@@ -1,1 +1,2 @@
 # giftastic
+This is a fun app that allows users to input an animal (or whatever they want) and have gifs for that thing show up. When the image is clicked, it shows the animated version of the gif, otherwise the still version. 
