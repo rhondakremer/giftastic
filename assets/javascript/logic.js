@@ -50,7 +50,7 @@ $("#buttons-go-here").on("click", ".animals", function () {
             var animalImage = $("<img>");
 
             animalImage.attr("src", results[i].images.fixed_height_still.url);
-            animalImage.attr("data-state", "still");
+            animalImage.attr("data-state", "still" );
             animalImage.attr("data-still", results[i].images.fixed_height_still.url);
             animalImage.attr("data-animate", results[i].images.fixed_height.url);
 
