@@ -1,5 +1,6 @@
 body {
     background: lightpink;
+    font-family: 'Satisfy', cursive;
 }
 
 .gifs {
@@ -7,3 +8,26 @@ body {
     padding: 5px;
 }
 
+button {
+    border-radius: 40%;
+    padding: 10px;
+    margin: 5px;
+    font-family: 'Lacquer', sans-serif;
+}
+
+.centered {
+    text-align: center;
+}
+
+#message {
+    background: white;
+    border: gray solid 1px;
+    margin-top: 10px;
+}
+
+#pick-message {
+    background: white;
+    border: gray solid 1px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}

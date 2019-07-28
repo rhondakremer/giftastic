@@ -3,7 +3,7 @@ $( document ).ready(function() {
 console.log("this works");
 var animals = ["dog", "cat", "bird", "cow"];
 renderButtons();
-
+$("#message").hide();
 
 function renderButtons() {
     for (let i = 0; i < animals.length; i++) {
@@ -25,6 +25,7 @@ $("#submit").on("click", function () {
     animals.push(userInput);
     $("#userInput").val("");
     $("#buttons-go-here").empty();
+    $("#message").css("display", "block");
     renderButtons();
 }
 });
@@ -32,6 +33,7 @@ $("#submit").on("click", function () {
 
 $("#buttons-go-here").on("click", ".animals", function () {
     console.log("I should work")
+    $("#message").show();
     var animal = $(this).attr("data-animal");
     var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
         animal + "&api_key=BkaUZZWcFij6J7AoQj3WtPb1R2p9O6V9&limit=10";
