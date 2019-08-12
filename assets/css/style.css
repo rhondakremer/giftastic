@@ -1,5 +1,5 @@
 body {
-    background: lightpink;
+    background-image: url('../images/pink_rice.png');
     font-family: 'Satisfy', cursive;
 }
 
@@ -17,12 +17,14 @@ button {
 
 .centered {
     text-align: center;
+    font-size: 20px;
 }
 
 #message {
     background: white;
     border: gray solid 1px;
     margin-top: 10px;
+    font-size: 25px;
 }
 
 #pick-message {
@@ -30,4 +32,5 @@ button {
     border: gray solid 1px;
     margin-bottom: 10px;
     margin-top: 10px;
+    font-size: 25px;
 }

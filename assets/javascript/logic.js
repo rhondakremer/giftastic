@@ -25,15 +25,14 @@ $("#submit").on("click", function () {
     animals.push(userInput);
     $("#userInput").val("");
     $("#buttons-go-here").empty();
-    $("#message").css("display", "block");
     renderButtons();
 }
 });
 
 
 $("#buttons-go-here").on("click", ".animals", function () {
-    console.log("I should work")
-    $("#message").show();
+    console.log("I should work");
+    $("#message").css("display", "block");
     var animal = $(this).attr("data-animal");
     var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
         animal + "&api_key=BkaUZZWcFij6J7AoQj3WtPb1R2p9O6V9&limit=10";
