@@ -3,8 +3,13 @@ body {
     font-family: 'Satisfy', cursive;
 }
 
+#gifs-go-here {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around
+}
+
 .gifs {
-    float: left;
     padding: 5px;
 }
 
